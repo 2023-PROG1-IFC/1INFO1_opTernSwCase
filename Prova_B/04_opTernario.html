@@ -12,11 +12,16 @@
     */
 
     //Entrada
-
+    const precoDacasa = Number(prompt(`Informe o preço da casa que deseja comprar:`).replace(",", "."));
+    const qntDeanos = Number(prompt(`Informe a quantidade de anos que deseja financiar:`).trim());
 
     //Processamento
+    (qntDeanos == 1) ? alert(`Não terá diferença no preço!`)
+        : (qntDeanos <= 12) ? alert(`O preço final da casa será de R$ ${(precoDacasa * 1.15).toFixed(2)}%`)
+            : (qntDeanos <= 24) ? alert(`O juro a ser aplicado é de ${(precoDacasa * 1.30).toFixed(2)} %`)
+                : alert(`Não é possível financiar!`);
 
-    
+
     //Saída
 
     /*
