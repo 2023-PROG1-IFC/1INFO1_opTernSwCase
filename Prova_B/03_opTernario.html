@@ -13,12 +13,23 @@
     */
 
     //Entrada
-
+const dias = Number(prompt(`Informe quantos dias você pretende ficar hospedado no hotel:`).trim());
     
     //Processamento
+let valorDiaria = 0;
+(dias = 1) ? `O valor da diária é de R$ 200,000`.replace(",",".")
+: (dias >= 1 == 3) ? `O valor da diária é de R$190,00`.replace(",",".")
+: (dias > 7) `O valor da diária é de R$ 160,00`.replace(",",".");
+if (dias) {
+  valorDiaria = (dias )
+    alert(`Seu custo é de R$200,00`.replace(",","."))
+}
+if (dias) {
+    valorDiaria = (dias >= 1 && 3)
+    alert(`Seu valor diário é de R$ ${}`)
+}
 
-    
-    //Saída
+//Saída
 
     
     /*
@@ -26,7 +37,7 @@
     Entrada: Quantidade de diárias
     - Informando 1, o custo será de R$ 200,00
     - Informando 2, o custo será de R$ 380,00
-    - Informando 5, o custo será de R$ 800,00
+    - Informando 5, o custo será de R$ 900,00
     - Informando 8, o custo será de R$ 1.280,00
     */
 </script>

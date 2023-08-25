@@ -10,11 +10,23 @@
     */
 
     //Entrada
+    const local = prompt(`Informe o local que você gostaria de residir:`).trim().toUpperCase();
 
-    
     //Processamento
+    switch (local) {
+        case "P":
+            alert(`Litoral`)
+            break;
+        case "F":
+            alert(`Interior`)
+            break;
+        case "U":
+            alert(`Cidade`)
+        default:
+            alert(`Opção Inválida!`)
+            break;
+    }
 
-    
     //Saída
 
     /*

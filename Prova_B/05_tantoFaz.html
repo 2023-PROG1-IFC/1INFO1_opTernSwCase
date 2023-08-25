@@ -2,7 +2,8 @@
 <script>
     // Tanto faz: Operador Ternário ou Switch...Case
     /*
-    Problema: Considere que uma pessoa foi comprar bebida para um evento. Considere que existem as seguintes opções de bebida, com seus respectivos preços por litro:
+    Problema: Considere que uma pessoa foi comprar bebida para um evento.
+     Considere que existem as seguintes opções de bebida, com seus respectivos preços por litro:
     - Refrigerante (RF): R$ 6,19
     - Suco (SU): R$ 9,80
     - Água (AG): R$ 5,00
@@ -13,10 +14,20 @@
     */
 
     //Entrada
+const bebida = prompt(`Informe qual opção deseja comprar: SU | AG | CF:`);
+const qntqueDeseja = Number(prompt(`Informe á quantidade que deseja comprar:`));
 
-    
     //Processamento
-
+switch (bebida) {
+    case "SU":
+        alert(`R$ 9,80`);
+        break;
+case "AG":
+    alert(`R$ 5,00`);
+    break
+    default:
+        break;
+}
     
     //Saída
 
